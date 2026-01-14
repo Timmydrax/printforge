@@ -31,8 +31,12 @@ It’s designed for hobbyists, makers, and anyone interested in 3D printing.
 
 ```bash
 git clone <https://github.com/Timmydrax/printforge >
+
 cd <printforge >
+
 pnpm install
+
 pnpm dev
 
 
+```
