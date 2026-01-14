@@ -31,6 +31,9 @@ export default function Home() {
           src={HeroImage.src}
           className="w-[350px] h-auto rounded-lg"
           alt="Hero Image"
+          width={1206}
+          height={1201}
+          loading="eager"
         />
       </section>
     </main>
