@@ -18,7 +18,7 @@ export default function Navbar() {
             <Image
               src={PFLogo.src}
               alt="PrintForge Logo"
-              className="w-[200px] h-auto hidden md:block"
+              className="w-50 h-auto hidden md:block"
               width={200}
               height={200}
             />
@@ -26,9 +26,9 @@ export default function Navbar() {
             <Image
               src={PFLogoIcon.src}
               alt="PrintForge Logo"
-              className="w-[40px] h-auto block md:hidden"
-              width={200}
-              height={200}
+              className="w-10 h-auto block md:hidden"
+              width={300}
+              height={63}
             />
           </div>
         </Link>

@@ -20,6 +20,8 @@ export default async function ModelDetailPage({
             src={placeholderImg.src}
             alt={`3D model of ${model.name}`}
             className="absolute inset-0 object-cover w-full h-full"
+            width={300}
+            height={300}
           />
         </figure>
 
@@ -37,7 +39,7 @@ export default async function ModelDetailPage({
           </div>
           <h1 className="mb-6 text-4xl font-bold">{model.name}</h1>
 
-          <Pill className="mb-6 w-fit"  aria-label="Category">
+          <Pill className="mb-6 w-fit" aria-label="Category">
             {model.category}
           </Pill>
 

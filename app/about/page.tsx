@@ -3,18 +3,21 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="bg-white text-foreground">
       <section className="container max-w-4xl px-4 py-8 mx-auto">
         <h1 className="mb-6 text-4xl font-bold text-center">
           About PrintForge
         </h1>
 
         <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
-          <div className="relative h-[300px] w-full">
+          <div className="relative h-75 w-full">
             <Image
               src={HeroImageSquare.src}
               alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
+              width={724}
+              height={724}
+              loading="eager"
             />
           </div>
           <div>

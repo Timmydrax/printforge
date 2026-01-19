@@ -5,15 +5,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
-        <div className="flex-1 space-y-6">
-          <p className="hidden text-sm text-gray-600 uppercase md:block">
+      <section className="bg-white flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
+        <div className="flex-1 space-y-6 w-1/2">
+          <p className="hidden text-sm text-gray-800 uppercase md:block">
             Your go-to platform for 3D printing files
           </p>
-          <h1 className="text-4xl font-bold md:text-5xl">
+          <h1 className="text-4xl font-bold md:text-5xl text-gray-950">
             Discover what&apos;s possible with 3D Printing
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-800">
             Join our community of creators and explore a vast library of
             user-submitted models.
           </p>
@@ -27,14 +27,17 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Image
-          src={HeroImage.src}
-          className="w-[350px] h-auto rounded-lg"
-          alt="Hero Image"
-          width={1206}
-          height={1201}
-          loading="eager"
-        />
+
+        <div className="w-1/2">
+          <Image
+            src={HeroImage.src}
+            className="w-full h-auto rounded-lg"
+            alt="Hero Image"
+            width={1206}
+            height={1201}
+            loading="eager"
+          />
+        </div>
       </section>
     </main>
   );
