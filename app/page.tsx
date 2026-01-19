@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="bg-white flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
-        <div className="flex-1 space-y-6 w-1/2">
+      <section className="bg-white flex flex-col items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
+        <div className="space-y-6 md:w-1/2 w-full">
           <p className="hidden text-sm text-gray-800 uppercase md:block">
             Your go-to platform for 3D printing files
           </p>
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-1/2">
+        <div className="md:w-1/2 w-full">
           <Image
             src={HeroImage.src}
             className="w-full h-auto rounded-lg"
