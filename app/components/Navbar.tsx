@@ -19,8 +19,8 @@ export default function Navbar() {
               src={PFLogo.src}
               alt="PrintForge Logo"
               className="w-50 h-auto hidden md:block"
-              width={200}
-              height={200}
+              width={175}
+              height={150}
             />
             {/* Mobile Logo */}
             <Image
